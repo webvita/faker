@@ -1,0 +1,33 @@
+{
+  "name": "@webvital/faker",
+  "version": "1.0.0",
+  "description": "Gernerate fake data on a fly.",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "./build/**/*"
+  ],
+  "scripts": {
+    "test": "jest",
+    "clean": "del ./build/*",
+    "build": "npm run clean && tsc"
+  },
+  "keywords": [
+    "faker",
+    "data",
+    "person"
+  ],
+  "author": "Wadson Vaval",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.4.0",
+    "del-cli": "^5.1.0",
+    "jest": "^29.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "config": "^3.3.12",
+    "nanoid": "^5.0.7"
+  }
+}
